@@ -263,7 +263,7 @@ $(document).ready(function(){
 	//Run searchMovies once to add an empty html to movie-grid using .html(). Then, overwrite it with the new html using .append(). Need to use .append() to overwrite or all the images will display on top of each other.
 
 	var searchTerm = '';
-	searchMovies();
+	//searchMovies();
 	//reference entire search form
 	$('.searchForm').submit(function(event){
 		$('#movie-grid').html('');
