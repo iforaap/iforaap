@@ -1,13 +1,7 @@
 $(document).ready(function(){
 	// The base url for all API calls
-	var apiBaseURL = 'http://api.themoviedb.org/3/';
-
 	// URL in Authentication. Base URL of image
-	const apiKey = '76d24ea153fe875dc0047fd96e151397';
-	var imageBaseUrl = 'https://image.tmdb.org/t/p/';
-
-	//const nowPlayingURL = apiBaseURL + 'movie/now_playing?api_key=' + apiKey;
-	const nowPlayingURL = 'http://d9.lan/jsonapi/node/gsrs?sort=-created';
+	const nowPlayingURL = 'https://dev-iforaap.pantheonsite.io/jsonapi/node/gsrs?sort=-created';
 
 
 	//==============================================================================
@@ -23,7 +17,7 @@ $(document).ready(function(){
 				var mid = nowPlayingData.data[i].id;
 				console.log(mid);
 				// mid = movie ID
-				var thisMovieUrl = apiBaseURL+'movie/'+mid+'/videos?api_key=' + apiKey;
+				
 				// console.log(i)
 
 			//	$.getJSON(thisMovieUrl, function(movieKey){
